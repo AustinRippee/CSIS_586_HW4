@@ -1,0 +1,5 @@
+import pandas as pd
+df = pd.read_csv('ratings.csv', header=None)
+r = df[2].value_counts().index[0]
+n = df[2].value_counts().values[0]
+print('Rippee:', r, 'rating is most often given', n , 'times')
